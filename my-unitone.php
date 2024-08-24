@@ -84,12 +84,3 @@ function my_editor_style_setup()
   add_theme_support( 'editor-styles' );
   add_editor_style(MY_UNITONE_URL . '/css/myplugin_css.css' );
 }
-
-// トップページのみキャッチフレーズをtitleタグ内から除去
-function wp_document_title_parts( $title ) {
-  if ( is_home() || is_front_page() ) {
-    unset( $title['tagline'] ); // キャッチフレーズを出力しない
-  }
-  return $title;
-}
-add_filter( 'document_title_parts', 'wp_document_title_parts', 10, 1 );
