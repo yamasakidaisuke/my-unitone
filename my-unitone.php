@@ -56,26 +56,26 @@ function mut_enqueue_style_script()
 	if (is_front_page() || is_home()) {
 		wp_enqueue_style(
 		  'swiper_style',
-		  MY_SNOW_MONKEY_URL . '/css/swiper-bundle.min.css',
+		  MY_UNITONE_URL . '/css/swiper-bundle.min.css',
 		  [],
 		  filemtime(MY_SNOW_MONKEY_PATH . '/css/swiper-bundle.min.css')
 		);
 		wp_enqueue_style(
 		  'my-swiper_style',
-		  MY_SNOW_MONKEY_URL . '/css/my-swiper.css',
+		  MY_UNITONE_URL . '/css/my-swiper.css',
 		  [],
 		  filemtime(MY_SNOW_MONKEY_PATH . '/css/my-swiper.css')
 		);
 		wp_enqueue_script(
 		  'swiper_scripts',
-		  MY_SNOW_MONKEY_URL . '/js/swiper-bundle.min.js',
+		  MY_UNITONE_URL . '/js/swiper-bundle.min.js',
 		  ['jquery'],
 		  filemtime(MY_SNOW_MONKEY_PATH . '/js/swiper-bundle.min.js'),
 		  true
 		);
 		wp_enqueue_script(
 		  'my-swiper_scripts',
-		  MY_SNOW_MONKEY_URL . '/js/my-swiper.js',
+		  MY_UNITONE_URL . '/js/my-swiper.js',
 		  ['jquery'],
 		  filemtime(MY_SNOW_MONKEY_PATH . '/js/my-swiper.js'),
 		  true
