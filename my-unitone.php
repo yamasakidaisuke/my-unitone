@@ -58,26 +58,26 @@ function mut_enqueue_style_script()
 		  'swiper_style',
 		  MY_UNITONE_URL . '/css/swiper-bundle.min.css',
 		  [],
-		  filemtime(MMY_UNITONE_PATH . '/css/swiper-bundle.min.css')
+		  filemtime(MY_UNITONE_PATH . '/css/swiper-bundle.min.css')
 		);
 		wp_enqueue_style(
 		  'my-swiper_style',
 		  MY_UNITONE_URL . '/css/my-swiper.css',
 		  [],
-		  filemtime(MMY_UNITONE_PATH . '/css/my-swiper.css')
+		  filemtime(MY_UNITONE_PATH . '/css/my-swiper.css')
 		);
 		wp_enqueue_script(
 		  'swiper_scripts',
 		  MY_UNITONE_URL . '/js/swiper-bundle.min.js',
 		  ['jquery'],
-		  filemtime(MMY_UNITONE_PATH . '/js/swiper-bundle.min.js'),
+		  filemtime(MY_UNITONE_PATH . '/js/swiper-bundle.min.js'),
 		  true
 		);
 		wp_enqueue_script(
 		  'my-swiper_scripts',
 		  MY_UNITONE_URL . '/js/my-swiper.js',
 		  ['jquery'],
-		  filemtime(MMY_UNITONE_PATH . '/js/my-swiper.js'),
+		  filemtime(MY_UNITONE_PATH . '/js/my-swiper.js'),
 		  true
 		);
 	}
