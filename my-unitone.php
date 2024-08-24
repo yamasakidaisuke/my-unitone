@@ -35,6 +35,20 @@ define( 'MY_UNITONE_URL', untrailingslashit( plugin_dir_url( __FILE__ ) ) );
  */
 define( 'MY_UNITONE_PATH', untrailingslashit( plugin_dir_path( __FILE__ ) ) );
 
+/**
+ * Display message in console.log if this plugin is enabled.
+ */
+add_action(
+	'wp_footer',
+	function () {
+		if ( is_user_logged_in() ) :
+			?>
+			<script>console.log( 'My unitone plugin is active' );</script>
+			<?php
+		endif;
+	}
+);
+
 //CSS JSの読み込み 第3引数の11はCSSを読み込む順番を指定
 add_action('wp_enqueue_scripts', 'mut_enqueue_style_script', 11 ,1);
 function mut_enqueue_style_script()
